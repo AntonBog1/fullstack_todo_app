@@ -6,17 +6,17 @@ class TodoForm extends Component {
         this.state = { inputValue: '' };
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
-    }
+    };
 
     handleChange(e) {
         this.setState({
             inputValue: e.target.value
         });
-    }
+    };
 
     handleSubmit() {
         this.props.addTodo(this.state.inputValue);
-    }
+    };
 
     render() {
         return (
@@ -31,7 +31,7 @@ class TodoForm extends Component {
                 </button>
             </div>
         )
-    }
-}
+    };
+};
 
 export default TodoForm;
